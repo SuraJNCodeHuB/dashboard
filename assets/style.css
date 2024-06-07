@@ -19,6 +19,20 @@ body {
     font-size: 13px;
 }
 
+.avatar-xl {
+    width: 7.5rem;
+    height: 7.5rem;
+}
+
+.info {
+    color: rgb(210, 156, 64);
+    background-color: rgb(254, 244, 228);
+    padding: 12px 16px;
+    line-height: 1.5;
+    border-radius: 4px;
+}
+
+
 
 /* START FORM  */
 
@@ -30,12 +44,35 @@ body {
 
 }
 
-.form-item label {
-    font-weight: 500;
+
+
+.form-item div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 
-.form-item label.span {
+.form-item a {
+    text-decoration: none;
+    color: var(--gray-text);
+}
+
+.form-item label {
+    font-weight: 500;
+    line-height: 1.5;
+    align-items: center;
+    display:flex;
+}
+
+.form-item  label span {
     color: red;
+   
+}
+
+.form-item  label input[type="checkbox"] {
+    margin-right: 5px;
+   
 }
 
 .form-item input[type="email"],
@@ -49,6 +86,9 @@ body {
     font-family: var(--primary-font);
 
 }
+
+
+
 
 ::placeholder {
     color: var(--gray-text);
@@ -65,6 +105,7 @@ body {
     
 }
 
+
 .primary-btn {
     background-color: rgb(10, 179, 156);
     color: white;
@@ -80,6 +121,10 @@ body {
 
 .primary-btn:hover {
     background-color:#099885 ;
+}
+
+.form-item  p.form-item-info {
+    margin: 0;
 }
 
 
@@ -184,12 +229,20 @@ body {
 .auth-box .intro{
     color: rgb(135, 138, 153);
     margin-bottom: 16px;
+    line-height: 1.6;
 
 }
 
 .auth-box form {
     margin-top: 24px;
     text-align: left;
+}
+
+
+
+
+.auth-box p em {
+    font-style: italic;
 }
 
 .auth-box button {
